@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-size: 19px;
+    font-family: "Montserrat", "Helvetica", sans-serif;
+    background: #FED605;
+    color: #4E0379;
+    font-weight: 500;
+}
+/* colors: #FED605 #4E0379 */
+
+section.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.transition {
+    width: 100%;
+    height: 200px;
+    background: url(../images/white-bg-horisontal.png);
+    background-position: bottom;
+}
+b {
+    font-family: "Merienda One", sans-serif;
+    font-size: 1.8em;
+    margin-right: 10px;
+}
+.white {
+    background: #fff;
+}
+
+/* Header Styles */
+
+header.header {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    overflow: hidden;
+}
+header.header .menu {
+    width: 100%;
+    min-height: 100px;
+    background: #4E0379;
+    color: #fff;
+}
+header.header .menu .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    max-width: 1000px;
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+header.header .menu .menu-icon img {
+    width: 30px;
+    color: #fff;
+    background: #fff;
+}
+header.header .main-title {
+    width: 100%;
+    min-height: 700px;
+    text-align: center;
+}
+header.header .main-title .wrapper {
+    background: url(../images/yellow-bg-vertical.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+    padding-top: 100px;
+}
+header.header .main-title h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+header.header .main-title h1 {
+    font-size: 2.5em;
+}
+header.header .main-title img.guide {
+    width: 550px;
+}
+
+/* Introducion Section Styles */
+
+section.introducion {
+    padding: 100px 0;
+}
+
+/* "For Who" section Styles */
+
+div.for-who {
+    padding: 100px 0;
+}
+div.for-who h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+div.for-who .item {
+    display: flex;
+    margin-bottom: 30px;
+}
+div.for-who p.padding {
+    margin-bottom: 50px;
+}
+div.for-who h3 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #FED605;
+}
+
+/* Accordion Styles */
+
+.accordion {
+    color: #4E0379;
+    cursor: pointer;
+    padding: 18px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Montserrat", "Helvetica", sans-serif;
+    background: #fff;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  
+  .active, .accordion:hover, .accordion:hover:after {
+      color: #FED605;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #4E0379;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: .4s;
+  }
+  
+  .active:after {
+    content: "\2212";
+    color: #FED605;
+  }
+.accordion.none:after {
+    content: '';
+}
+.accordion.active.none {
+    color: #4E0379;
+}
+.accordion.active.none:hover {
+    color: #FED605;
+}
+  .panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.panel p {
+    margin-bottom: 15px;
+}
+
+/* Price Section Styles */
+
+.price-section {
+    text-align: center;
+}
+.price-section.for-who h2 {
+    margin-bottom: 100px;
+}
+.price-section .guide {
+    border: 2px solid #4E0379;
+    max-width: 400px;
+    min-height: 550px;
+    padding-top: 50px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.price-section img {
+    width: 350px;
+    margin-bottom: 30px;
+}
+.price-section span strike {
+    font-size: 1.3em;
+}
+.price-section span strong {
+    font-size: 1.7em;
+}
+.price-section #demo {
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    background: url(../images/white-paint.png);
+    background-size: cover;
+}
+.price-section .small {
+    font-size: 1em;
+}
+a.buy {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 4px solid #FED605;
+    text-decoration: none;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: .2s;
+    background: url(../images/white-paint.png);
+    background-position: center;
+    background-size: cover;
+}
+a.buy:hover {
+    color: #FED605;
+} 
+
+/* Footer Styles */
+footer.footer {
+    width: 100%;
+    min-height: 100px;
+    background: #4E0379;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
