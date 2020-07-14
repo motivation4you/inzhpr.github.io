@@ -19,6 +19,7 @@ body {
 section.wrapper {
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 .transition {
     width: 100%;
@@ -243,6 +244,7 @@ a.buy:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
   }
 
 /* Footer Styles */
@@ -254,4 +256,16 @@ footer.footer {
     display: flex;
     align-items: center;
     color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    header.header .main-title img.guide {
+        width: 100%;
+    }
+    .price-section img {
+        width: 70%;
+    }
+    div.for-who h2 {
+        font-size: 1.5em;
+    }
 }
